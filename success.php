@@ -10,7 +10,7 @@ if ($_POST["payment_status"] == "rejected" || $_POST["payment_status"] == "failu
 else if($_POST["payment_status"] == "approved"){
 	$color = "#00FF00";
 	$title = "Aprobado";
-	$text = "Tu pago ha sido aprobado";	
+	$text = "Tu pago ha sido aprobado."." Tu número de orden es:".$_POST["merchant_order_id"].". Tu id de pago es: ".$_POST["payment_id"];
 }
 else if($_POST["payment_status"] == "pending"){
 	$color = "#FF4500";
