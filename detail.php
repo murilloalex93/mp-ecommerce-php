@@ -32,7 +32,7 @@ $item->description = "Dispositivo móvil de Tienda e-commerce";
 $item->title = $_POST['title'];
 $item->quantity = $_POST['unit'];
 $item->unit_price = $_POST['price'];
-$item->picture_url = $url_base."/".str_replace("./", "", $_POST['img']);
+$item->picture_url = $url_base."/assets/".str_replace("./assets/", "", $_POST['img']);
 
 $preference->back_urls = array(
     "success" => $url_base."/success.php",
